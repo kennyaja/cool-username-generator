@@ -1,0 +1,74 @@
+* {
+	font-family: 'Comic Sans MS';
+	box-sizing: border-box;
+	color: white;
+}
+
+.bg {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* img source: https://unsplash.com/photos/aerial-photography-of-cityscape-at-night-ukvgqriuOgo */
+	background: url(img/photo-1444723121867-7a241cacace9.avif);
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+}
+
+label {
+	font-size: 11pt;
+	margin-bottom: 4px;
+}
+
+.container {
+	width: calc(100% - 10px);
+	max-width: 640px;
+	background-color: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(30px);
+	margin: 150px auto;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 16px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.warning {
+	color: #ff0000;
+	margin-top: 4px;
+	font-size: 10pt;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#nameInput {
+	padding: 12px 16px;
+	border-radius: 8px;
+	border: none;
+	background: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 12pt;
+}
+
+#generateBtn {
+	margin-top: 12px;
+	background-color: skyblue;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	font-size: 12pt;
+	padding: 12px;
+}
+
+#nameOutput {
+	text-align: center;
+	font-size: 16pt;
+}
