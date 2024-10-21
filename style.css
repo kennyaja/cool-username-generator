@@ -60,12 +60,22 @@ label {
 
 #generateBtn {
 	margin-top: 12px;
-	background-color: skyblue;
+	background-color: #044b80;
 	border: none;
 	outline: none;
 	border-radius: 8px;
 	font-size: 12pt;
 	padding: 12px;
+	transition-property: background-color;
+	transition-duration: 200ms;
+}
+
+#generateBtn:hover {
+	background-color: #044f88;
+}
+
+#generateBtn:active {
+	background-color: #04528d;
 }
 
 #nameOutput {
