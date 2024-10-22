@@ -161,8 +161,8 @@ function screwCapitalization(str) {
 	}).join("");
 }
 
-generateBtnEl.onclick = () => {
-	let name = nameInputEl.value.capitalizeFirstLetter();
+function createNewUsername(name) {
+	name = name.capitalizeFirstLetter();
 
 	if (name === "") {
 		nameOutputEl.innerHTML = "Please insert a name";
@@ -234,3 +234,10 @@ generateBtnEl.onclick = () => {
 
 	nameOutputEl.innerHTML = resultUsername;
 }
+
+generateBtnEl.onclick = () => createNewUsername(nameInputEl.value);
+nameInputEl.addEventListener('keypress', (event) => {
+	if (event.key == "Enter") {
+		createNewUsername(nameInputEl.value);
+	}
+});
